@@ -1,0 +1,38 @@
+# Secrets and local environment overrides
+.env
+.env.*
+!.env.example
+
+# JavaScript dependencies, builds, logs, and caches
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+coverage/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Python environments, bytecode, and tooling caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Runtime data: PDFs belong in MongoDB GridFS; embeddings need a managed
+# persistent volume in production, never source control.
+uploads/
+chroma_db/
+chroma_rust_probe/
+
+# Local IDE and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
